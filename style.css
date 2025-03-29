@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+:root {
+    --color-fondo: #2563EB; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.cuadro {
+    background-color: #ffffff;
+    border-radius: 40px;
+    width: 900px;
+    height: 500px;
+    display: flex;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.izquierdo {
+    width: 50%;
+    background-color: var(--color-fondo); 
+    color: #ffffff;
+    padding: 10%;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.izquierdo h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.izquierdo p {
+    font-size: 12px;
+}
+.div_boton {
+    align-items: flex-start;
+}
+
+.izquierdo button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.izquierdo button:hover {
+    background-color: #ffffff;
+    color: var(--color-fondo);
+}
+
+.derecho {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 10%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.derecho h1 {
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    border: none; 
+    border-bottom: 2px solid #ddd; 
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: transparent; 
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+.derecho button {
+    background-color: var(--color-fondo);
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    font-size: 16px;
+}
+
+.derecho button:hover {
+    background-color: #062479;
+}
